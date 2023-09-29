@@ -1,0 +1,46 @@
+<html>
+
+
+<script lang="javascript">
+
+function area()
+{
+
+var radius=document.getElementById("t1").value;
+
+var area=3.14*radius*radius;
+
+document.getElementById("result").innerHTML="area="+area;
+
+}
+
+function circumference()
+{
+
+var radius=document.getElementById("t1").value;
+
+var circumference=2*3.14*radius;
+
+document.getElementById("result").innerHTML="circumference = "+circumference;
+
+}
+
+
+
+</script>
+
+
+<form name="f1" >
+
+Enter radius <input type="text" id="t1" > <br><br>
+
+
+
+<input type="button" value="Click area" onclick="area();"/> 
+
+<input type="button" value="Click circumference" onclick="circumference();"/> <br><br>
+
+<span id="result">-----</span>
+
+</form>
+</html>

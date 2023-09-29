@@ -1,0 +1,35 @@
+<html>
+
+
+<script lang="javascript">
+
+function solution()
+{
+
+var length=document.getElementById("t1").value;
+
+var breath=document.getElementById("t2").value;
+
+var square=length*breath;
+
+document.getElementById("result").innerHTML="square is ="+square;
+
+}
+
+</script>
+
+
+
+
+<form name="f1" >
+
+Enter length <input type="text" id="t1" > <br><br>
+
+Enter breath <input type="text" id="t2" > <br><br>
+
+<input type="button" value="Click Ok" onclick="solution();"/> <br><br>
+
+<span id="result">-----</span>
+
+</form>
+</html>

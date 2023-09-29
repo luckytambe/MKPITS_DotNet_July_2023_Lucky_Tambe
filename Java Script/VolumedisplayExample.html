@@ -1,0 +1,39 @@
+<html>
+
+
+<script lang="javascript">
+
+function solution()
+{
+
+var length=document.getElementById("t1").value;
+
+var breath=document.getElementById("t2").value;
+
+var height=document.getElementById("t3").value;
+
+var Volume=length*breath*height;
+
+document.getElementById("result").innerHTML="Volume is ="+Volume;
+
+}
+
+</script>
+
+
+
+
+<form name="f1" >
+
+Enter length <input type="text" id="t1" > <br><br>
+
+Enter breath <input type="text" id="t2" > <br><br>
+
+Enter height <input type="text" id="t3" > <br><br>
+
+<input type="button" value="Click Ok" onclick="solution();"/> <br><br>
+
+<span id="result">-----</span>
+
+</form>
+</html>
