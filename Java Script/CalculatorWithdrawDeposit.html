@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -26,11 +27,11 @@
 			<div class="form-check">
 				<div class="row">
 					<div class="col">
-						<input type="radio" class="form-check-label" id="d1" name="d1" onclick="deposit();" />
-						<label for="d1">Deposite</label>
+						<input type="radio" class="form-check-label" value="deposit" id="d1" name="d1"  />
+						<label for="d1">Deposit</label>
 					</div>
 					<div class="col">
-						<input type="radio" class="form-check-label" id="w1" name="d1" onclick="withdrawl();" />
+						<input type="radio" class="form-check-label" id="d2" name="d1" value="withdrawl"  />
 						<label for="w1">Withdrawl</label>
 					</div>
 				</div><br>
@@ -55,18 +56,33 @@
 	var amt;
 	var bal = 1000;
 	var result;
-	function deposit() {
-		var amt = parseInt(document.getElementById("a1").value);
-		var result = bal + amt;
-		document.getElementById("result").innerHTML = "Deposite bal is " + result;
-
+	var ans;
+	function display() 
+	{
+	amt=parseInt(document.getElementById("a1").value);
+	var r=document.getElementsByName("d1");
+	for(i=0;i<r.length;i++)
+	{
+		if(r[i].checked)
+		{
+			ans=r[i].value;
+			//alert(ans);
+		}
+	
 	}
-	function withdrawl() {
-		var amt = parseInt(document.getElementById("a1").value);
-		var result = bal - amt;
-		document.getElementById("result").innerHTML = "Withdrawl bal is " + result;
-
+//alert(ans);
+	if(ans=="deposit")
+	{
+		bal=bal + amt;
 	}
+	else if(ans == "withdrawl")
+	{
+		bal =bal -amt;
+	}
+
+	document.getElementById("result").innerHTML="balance : " + bal;
+	}
+	
 
 
 </script>
