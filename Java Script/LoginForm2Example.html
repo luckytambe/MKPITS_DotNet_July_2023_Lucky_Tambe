@@ -1,0 +1,48 @@
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<div class="jumbotron text-center">
+<h3> SuperBikes</h3>
+</div>
+
+<div name="f1">
+<div class="form-group">
+<label>Enter name</label>
+<input type="text" class="form-control" id="t1" placeholder="Enter email"/>
+<br>
+<label>Enter password</label>
+<input type="password" class="form-control" id="t2" placeholder="Enter password" />
+<br>
+<input class="btn btn-info" value="Submit" class="form-control" onclick="check()"/>
+
+<span id="result"></span>
+
+</div>
+</div>
+
+<script lang="javascript">
+
+function check()
+{
+ 
+ var u1=document.getElementById("t1").value;
+ var p1=document.getElementById("t2").value;
+ 
+ if( u1 =="admin" && p1=="admin")
+ {
+ document.getElementById("result").innerHTML="login successful";
+ }
+ else
+ {
+ document.getElementById("result").innerHTML="Invalid credentials!";
+ }
+
+}
+
+</script>
