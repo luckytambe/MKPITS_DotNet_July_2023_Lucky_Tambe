@@ -1,0 +1,78 @@
+<html>
+
+<form name="f1">
+
+Enter phy: 
+<input type="text" id="t1" placeholder="enter Phy marks" />
+<br>
+<br>
+Enter maths: 
+<input type="text" id="t2" placeholder="enter maths marks" /> 
+<br><br>
+Enter che: 
+<input type="text" id="t3" placeholder="enter che marks" /> 
+<br><br>
+<input type="button" value="check" onclick="check()" />
+<br> <br>
+<span id="res"></span>
+<br> <br>
+<span id="per"></span>
+<br> <br>
+<span id="grad"></span>
+</form>
+
+<script lang="javascript">
+
+function check()
+{
+var phy=parseInt(document.getElementById("t1").value);
+var maths=parseInt(document.getElementById("t2").value);
+var che=parseInt(document.getElementById("t3").value);
+
+var total=phy+maths+che;
+document.getElementById("res").innerHTML="total is = " + total;
+
+var per=(total/300.0)*100;
+document.getElementById("per").innerHTML="per is = " + per;
+
+if (per>=75)
+{
+document.getElementById("grad").innerHTML="Topeer A";
+}
+else if( age < 60 )
+{
+document.getElementById("grad").innerHTML="grade B";
+}
+else
+{
+document.getElementById("grad").innerHTML="grade C";
+}
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

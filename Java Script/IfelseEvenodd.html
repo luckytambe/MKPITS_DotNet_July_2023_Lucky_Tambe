@@ -1,0 +1,31 @@
+
+<form>
+
+Enter num <input type="text" id="t1" name="t1"/> 
+
+<input type="button" value="Click" onclick="check()">
+
+<span id="res"></span>
+
+</form>
+
+<script lang="javascript">
+
+
+
+
+function check()
+{
+var num=document.getElementById("t1").value;
+
+if(num%2==0)
+{
+document.getElementById("res").innerHTML="it is even";
+}
+else
+{
+document.getElementById("res").innerHTML="it is odd";
+}
+}
+</script>
+
