@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function myFunction()
+{
+var x=document.getElementById("fname");
+x.value=x.value.toUpperCase();
+//alert("first name " + x.value);
+document.getElementById("res").innerHTML=x.value;
+}
+
+function youFunction()
+{
+var x=document.getElementById("lname");
+x.value=x.value.toUpperCase();
+//alert("last name " + x.value);
+document.getElementById("res2").innerHTML=x.value;
+}
+
+
+</script>
+</head>
+<body>
+First name <input id="fname" type="text" onchange="myFunction()" /><br><br>
+Last name <input id="lname" type="text" onchange="youFunction()" /><br><br>
+<span id="res"></span>
+<span id="res2"></span>
+</body>
+</html>
