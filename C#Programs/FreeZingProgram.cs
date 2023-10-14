@@ -20,7 +20,7 @@ namespace ConsoleApp4
             }
             else if(temp  >= 10 && temp <= 39)
             {
-                Console.WriteLine("it is hot");
+                Console.WriteLine("it is cold to hot");
             }
             else
             {
