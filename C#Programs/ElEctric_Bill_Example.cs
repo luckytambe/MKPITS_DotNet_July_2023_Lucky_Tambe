@@ -23,15 +23,15 @@ namespace ElEctric_Bill_Example
             Console.WriteLine("Enter unit");
             unit = Convert.ToInt32(Console.ReadLine());
 
-            if (unit <= 190)
+            if (unit < 190)
             {
                 charge = 1.20f;
             }
-            else if (unit >= 200 && unit <= 400)
+            else if (unit > 200 && unit < 400)
             {
                 charge = 1.50f;
             }
-            else if (unit >= 400 && unit <= 600)
+            else if (unit > 400 && unit < 600)
             {
                 charge = 1.80f;
             }

@@ -20,7 +20,7 @@ namespace SellingPriceExample
 
             profit = cost  - selling;
 
-            if( selling >= cost )
+            if( selling > cost )
             {
                 Console.WriteLine("The profit amount is : ");
             }
